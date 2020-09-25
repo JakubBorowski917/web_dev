@@ -1,0 +1,72 @@
+<div class="container">
+  <header class="container">
+  <h1 id="title">Formularz ankiety</h1>
+  <p id="description"><i>Dziękujemy za wasze opinie</i></p>
+  </header>
+    <div class="boxed"> 
+  <form id="survey-form">
+     <div class="form-group">
+       <label for="name">Name
+         <input id="name" type="text" class="form-control" name="name" placeholder="Podaj swoje imie..." required>
+       </label>
+     </div>
+    <div class="form-group">   
+    <label for="email">E-mail
+         <input id="email" type="text" class="form-control" name="email" placeholder="Podaj swoj adres e-mail..." required>
+       </label>
+      </div>
+      <div class="form-group">
+      <label for="age">Age(optional)
+         <input id="number" type="number" class="form-control" name="age" placeholder="Wiek..." min="18" max="99" required>
+       </label>
+  </div>
+   <div class="form-group">
+    <label for="dropdown">Jaką rolę pełnisz w organizacji?</label>
+      <select id="dropdown" class="form-control" name="dropdown">
+        <option disabled selected value>Wybierz opcję...</option>
+        <option value="student">Student</option>
+        <option value="work">Praca na pełen etat</option>
+        <option value="other">Inna</option>
+        <option value="refusal">Wolę nie mówić</option>
+     </select>
+     </div>
+    <div class="form-group"> 
+    </label>
+     <label for="something">Czy polecisz freeCodeCamp znajomym?</label>
+    <input type="radio" class="input-radio" name="decisions-yes" checked>Tak
+    <input type="radio" class="input-radio" name="decisions-no">Nie
+    <input type="radio" class="input-radio" name="decisions-maybe">Może
+   </div> 
+    <div class="form-group">
+     <label for="question">Jaki jest twój ulubiony kurs we freeCodeCamp?</label>
+     <select id="dropdown-2" class="form-control" name="dropdown-2">
+      <option disabled selected value >Wybierz opcję...</option>
+      <option value="courses">Kursy</option>
+      <option value="chllenges">Wyzwania</option>
+      <option value="community">Społeczność</option>
+      <option value="other-2">Inne</option>
+    </select>
+      </div>
+       <label for="checkbox">Co moglibyśmy poprawić?</label>
+     <label for="front-end"><input id="front-end" type="checkbox" class="input-checkbox" name="personality"> Front-end Projects</label>
+       <label for="back-end"><input id="back-end" type="checkbox" class="input-checkbox" name="personality"> Back-end Projects</label>
+      <label for="front-end"><input id="front-end" type="checkbox" class="input-checkbox" name="personality"> Community</label>
+      <label for="front-end"><input id="front-end" type="checkbox" class="input-checkbox" name="personality"> Data Visualization</label>
+      <label for="front-end"><input id="front-end" type="checkbox" class="input-checkbox" name="personality"> Challenges</label>
+   <div class="form-group">
+      <p>Masz jakieś sugestie?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
